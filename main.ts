@@ -8,8 +8,8 @@ basic.showIcon(IconNames.Happy)
 // value that the servo can use to rotate itself.
 basic.forever(function () {
     resistance = pins.analogReadPin(AnalogPin.P1)
-    servo_rotation = resistance / 4
+    servo_rotation = resistance / 5
     robotbit.Servo(robotbit.Servos.S1, servo_rotation)
     basic.showNumber(resistance)
-    basic.pause(500)
+    basic.pause(100)
 })
